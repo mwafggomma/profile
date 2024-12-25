@@ -1,0 +1,260 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #dddddd;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+}
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(9, 94, 192);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.navigation a {
+    color: rgb(9, 94, 192);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500px;
+    padding-left: 40px;
+}
+.navigation a:hover{
+    color: red;
+}
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/uou.jpg);
+    background-position: center;
+    background-position:center top ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #fffbfb;
+    font-size: 1.5rem;
+    font-weight: 500px;
+}
+.main h2 span{
+    color: rgba(6, 45, 243, 0.733);
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700px;
+    letter-spacing: 1px;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: #fff;
+    background-color: rgb(2, 24, 130);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    display: inline-block;
+    padding: 15px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 1s ease;
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #ffffff;
+    font-size: 1.7rem;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #0a49f6;
+    font-size: 2.2rem;
+    font-weight: 800px;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row  ;
+    flex-wrap:wrap ;
+}
+.card{
+    background-color: #fff;
+    width: 340px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #0a49f6;
+    font-size: 8rem;
+    text-align: center;
+}
+.info h3{
+    color: #0a49f6;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.info {
+    text-align: center;
+    color: #000000;
+    margin: 10px;
+}
+
+section.project{
+    background-color: #000921f8;
+}
+.project.content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: #dddddd;
+    border: 2px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 1.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-img{
+    opacity: 0.9;
+}
+.project-img img{
+    width: 100%;
+}
+.project-info{
+    padding: 10px;
+}
+.project-category{
+    font-size: 15px;
+    color: #000000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.more{
+    text-decoration: none;
+    color: #000000;
+}
+.more:hover{
+    color: red;
+}
+
+.footer{
+    background-color: #030c25;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3rem;
+    font-weight: 700px;
+}
+.footer-title span{
+    color: #0a49f6;
+}
+
+
+@media (max-width:1000px){
+    header{
+        padding: 5px 10px;
+    }
+    header a{
+        font-size: 10px;
+    }
+    .navigation a{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    section {
+        padding: 70px 20px;
+    }
+    .main h2{
+        font-size: 1.2em;
+    }
+    .main h3{
+        font-size: 1.7em;
+    }
+    .content{
+        /* flex-direction: column;  */
+         align-items: center;
+    }
+    section.project-card{
+        padding: 10px 20px;
+        color: red;
+        text-align: center;
+    } 
+    footer{
+        font-size: 5px;
+    }
+    .footer p {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .social-icons{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:390px){
+    body{
+        font-size: 10px;
+        text-align: center;
+    }
+    section{
+        font-size: 13px;
+    }
+}
